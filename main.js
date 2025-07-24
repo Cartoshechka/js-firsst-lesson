@@ -1,4 +1,4 @@
-gitconsole.log('JS #1. Домашнє завдання. Основи JavaScript: Працюємо зі змінними, типами даних');
+console.log('JS #1. Домашнє завдання. Основи JavaScript: Працюємо зі змінними, типами даних');
 console.log('Hello World!');
 /*
  * #1
