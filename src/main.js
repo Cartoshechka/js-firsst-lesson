@@ -12,17 +12,18 @@ console.log('Hello World!');
 // ім'я змінної: myArr, значення: 1, 2, 3, 4, 5
 // ім'я змінної: myObj, значення: first: 'First Name', last: 'Last Name'
 
-let myNum = 10;
-let myStr = 'some string';
-let myBool = true;
-let myArr = [1, 2, 3, 4, 5];
-let myObj = { first: 'First Name', last: 'Last Name' };
+global.myNum = 10;
+global.myStr = 'some string';
+global.myBool = true;
+global.myArr = [1, 2, 3, 4, 5];
+global.myObj = { first: 'First Name', last: 'Last Name' };
 
-console.log('myNum =', myNum);
-console.log('myStr =', myStr);
-console.log('myBool =', myBool);
-console.log('myArr =', myArr);
-console.log('myObj =', myObj);
+console.log('myNum =', global.myNum);
+console.log('myStr =', global.myStr);
+console.log('myBool =', global.myBool);
+console.log('myArr =', global.myArr);
+console.log('myObj =', global.myObj);
+
 /*
  * #2
  *
@@ -30,8 +31,8 @@ console.log('myObj =', myObj);
  * Результат збережіть у змінній decimal2.
  */
 
-let decimal2 = myNum.toFixed(2);
-console.log('decimal2 =', decimal2);
+global.decimal2 = global.myNum.toFixed(2);
+console.log('decimal2 =', global.decimal2);
 
 /*
  * #3
@@ -40,7 +41,7 @@ console.log('decimal2 =', decimal2);
  * Потім збільште його на 1 та запищіть в цю ж саму змінну.
  */
 
-let myBigInt = 123n;
-console.log('myBigInt =', myBigInt);
-myBigInt = myBigInt + 1n;
-console.log('myBigInt + 1 =', myBigInt);
+global.myBigInt = 123n;
+console.log('myBigInt =', global.myBigInt);
+global.myBigInt = global.myBigInt + 1n;
+console.log('myBigInt + 1 =', global.myBigInt);
